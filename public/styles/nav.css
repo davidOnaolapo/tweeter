@@ -28,7 +28,7 @@ nav {
   color:red;
 }
 
-.new-tweet {
+.nav-tweet {
   display: flex;
   flex-direction: column;
   margin-top: 1.5em;

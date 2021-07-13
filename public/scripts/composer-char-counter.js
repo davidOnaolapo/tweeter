@@ -9,6 +9,10 @@ $(document).ready(function() {
     let counter = (currentMax - 1) - input;
 
     document.getElementById("tweet-counter").innerHTML = counter;
+
+    if (counter < 1) {
+      counterDisplay.css("color", "red")
+    }
   });
 
   // $(tweeting).keydown(function(e) {

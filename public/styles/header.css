@@ -1,0 +1,33 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+
+header { 
+  height: 400px;
+  width: 100%;
+  background-color: #ffe135;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.name-text {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */

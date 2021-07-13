@@ -13,10 +13,11 @@ nav {
   padding: 0 1.5em 0 1.5em;
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  z-index: 2;
 }
 
-.text {
+.textNav {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -33,6 +34,8 @@ nav {
   margin-top: 1.5em;
   /* align-self: flex-end; */
 }
+
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

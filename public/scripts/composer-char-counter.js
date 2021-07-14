@@ -10,18 +10,18 @@ $(document).ready(function() {
 
     document.getElementById("tweet-counter").innerHTML = counter;
 
-    if (counter < 1) {
+    if (counter < 1) {                    //colors the counter red when it goes below 1
       counterDisplay.css("color", "red")
     }
   });
 
-  // $("article").mouseover(function() {
-  //   $(this).css("box-shadow", "5px 5px #B0C4DE")
-  // })
+  $("article").mouseover(function() {             //Shades the bottom and right of tweet article on hover
+    $(this).css("box-shadow", "5px 5px #B0C4DE")
+  })
 
-  // $("article").mouseleave(function() {
-  //   $(this).css("box-shadow", "0px 0px")
-  // })
+  $("article").mouseleave(function() {
+    $(this).css("box-shadow", "0px 0px")
+  })
   // $(tweeting).keydown(function(e) {
 
   //   if( e.which == 8 || e.which == 46 )

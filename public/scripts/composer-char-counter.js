@@ -22,6 +22,15 @@ $(document).ready(function() {
   $("article").mouseleave(function() {
     $(this).css("box-shadow", "0px 0px")
   })
+
+  $("i").mouseover(function() {             //Shades the bottom and right of tweet article on hover
+    $(this).css("color", "#ffc40c");
+  })
+
+  $("i").mouseleave(function() {             //Shades the bottom and right of tweet article on hover
+    $(this).css("color", "rgb(84, 81, 73)");
+  })
+
   // $(tweeting).keydown(function(e) {
 
   //   if( e.which == 8 || e.which == 46 )

@@ -68,5 +68,13 @@ i {
 .icons {
   font-size: 0.7em;
   margin: 0 20px 0 20px
+}
+
+.tweeter-handle {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #c1c1c1;
+  font-weight: bold;
 
 }

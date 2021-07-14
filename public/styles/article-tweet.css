@@ -44,6 +44,7 @@ i {
 
 .header-text {
   display: flex;
+  margin-left: 12px;
   align-items: center;
 } 
 
@@ -60,7 +61,6 @@ i {
 
 .img-group {
   display: flex;
-  justify-content: space-between;
   width: 12%;
   height: 100%
 }

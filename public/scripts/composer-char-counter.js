@@ -14,7 +14,7 @@ $(document).ready(function() {
       counterDisplay.css("color", "red")
     }
   });
-
+  //Move these!
   $("article").mouseover(function() {             //Shades the bottom and right of tweet article on hover
     $(this).css("box-shadow", "5px 5px #B0C4DE")
   })

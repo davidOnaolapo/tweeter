@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
   const loadTweets = () => {
@@ -9,6 +8,13 @@ $(document).ready(function() {
   }
 
   loadTweets();
+
+  const renderTweet = () => {
+    // const $tweet = createTweetElement(tweetsArr);
+    // $(".container").append($tweet);
+    console.log("I can do diz");
+    return;
+  }
 
   const renderTweets = (tweetsArr) => {
     for (let tweet of tweetsArr) {
@@ -36,7 +42,7 @@ $(document).ready(function() {
         </header>
         <div class="article-tweet">
           <span class="div-text">
-            ${tweetData.content.text}
+            ${escape(tweetData.content.text)}
           </span>
         </div>
         <footer>
@@ -52,7 +58,13 @@ $(document).ready(function() {
       </article>`
 
     return newTweet;
-  }    
+  }  
+  
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 })
 
 
@@ -64,12 +76,3 @@ $(document).ready(function() {
 
 
 
-
-
-// Test / driver code (temporary). Eventually will get this from the server.
-
-
-
-// Test / driver code (temporary)
-// console.log($tweet); // to see what it looks like
-// $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.

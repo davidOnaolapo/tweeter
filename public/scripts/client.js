@@ -43,7 +43,6 @@ $(document).ready(function() {
       </article>`
 
     return newTweet;
-
   }    
 
   const data = [

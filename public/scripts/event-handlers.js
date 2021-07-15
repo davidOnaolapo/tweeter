@@ -23,27 +23,22 @@ $(document).ready(function() {
 
     let formData = $("#tweet-form").serialize();
 
-  //   $.ajax({
-  //     url : "/tweets",
-  //     type: "POST",
-  //     data : formData,
-  //     dataType: "JSON",
-  //     encode: true,
-  //     success: function(data, textStatus, jqXHR)
-  //     {
-  //         console.log(data);
-  //     },
-  //     error: function (jqXHR, textStatus, errorThrown)
-  //     {
-  //       console.log("Error", errorThrown);
-  //     }
-  // });
-
-
-   })
-
-  
-  
+    $.ajax({
+      url : "/tweets",
+      type: "POST",
+      data : formData,
+      dataType: "JSON",
+      encode: true,
+      success: function(data, textStatus, jqXHR)
+      {
+          console.log(data);
+      },
+      error: function (jqXHR, textStatus, errorThrown)
+      {
+        console.log("Error", errorThrown);
+      }
+    });
+  })
 });
 
 

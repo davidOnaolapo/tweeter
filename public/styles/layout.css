@@ -26,9 +26,14 @@ body {
 main {
   width: 90%;
   align-self: center;
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column; 
+}
+
+.page-top { 
+  display:flex;
+  flex-direction: column;
 }
 
 

@@ -39,4 +39,25 @@ output {
 .hum {
   display: flex;
   align-items: center;
+  margin-top: 10px;
+}
+
+.error {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border:4px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error p {
+  margin: 0px;
+  font-size: 28px
+}
+
+.err-icon {
+  margin: 10px 40px 10px 40px;
+  color: red;
 }

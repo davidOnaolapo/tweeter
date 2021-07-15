@@ -21,7 +21,7 @@ $(document).ready(function() {
   $("#tweet-form").submit(function(event) {
     event.preventDefault();
 
-    // let formData = $("#tweet-form").serialize();
+    let formData = $("#tweet-form").serialize();
 
   //   $.ajax({
   //     url : "/tweets",

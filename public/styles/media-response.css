@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1024px) {
+  
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  main {
+    margin-top: 200px;
+    margin-right: 40px;
+    margin-left: 6em;
+  }
+
+  .main-header {
+    width: 500px;
+    margin-top: 230px;
+    margin-left: 40px
+  }
+
+  .tweet-error {
+    margin-top: 30px;
+  }
+
+  nav {
+    background-color: #4056A1;
+  }
+
+}

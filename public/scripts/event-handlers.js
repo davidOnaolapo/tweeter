@@ -16,6 +16,7 @@ $(document).ready(function() {
         data : formData,
         success: function(data, textStatus, jqXHR)
         {
+          $("#tweet-error").slideUp("fast")
           window.loadTweets();
         },
         error: function (jqXHR, textStatus, errorThrown)
@@ -27,12 +28,12 @@ $(document).ready(function() {
       console.log(error)
       if (error === "err01") {
         console.log("Im checking for error type");
-        $("#error-text").text( "You haven't tweeted anything my friend, write something!")
+        $("#error-text").text( "You haven't tweeted anything my friend, write something! 😬")
       } else if (error === "err02") {
-        $("#error-text").text( "Your tweet is too long, please use the counter for reference")
+        $("#error-text").text( "Your tweet is too long, please use the counter for reference 🧐")
       }
-      
-      $( "#tweet-error" ).slideDown("fast")
+
+      $("#tweet-error").slideDown("fast")
     }
   })
 

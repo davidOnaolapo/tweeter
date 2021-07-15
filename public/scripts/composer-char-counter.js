@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  const counterDisplay = $("#tweet-text").closest("#form").find(".counter")
+  const counterDisplay = $("#tweet-text").closest("#tweet-form").find(".counter")
   const currentMax = counterDisplay.text();      // Grabs current number written in the html output tag with class .counter
   const tweeting = $("#tweet-text");
 

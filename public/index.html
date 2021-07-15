@@ -53,9 +53,9 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <div class="error">
+        <div class="tweet-error" id="tweet-error">
           <i class="fas fa-exclamation-triangle err-icon"></i>
-          <p> Your tweet is too long, please use the counter for reference </p>
+          <p id="error-text"> Your tweet is too long, please use the counter for reference </p>
           <i class="fas fa-exclamation-triangle err-icon"></i> 
         </div>
         <form action="/tweets/" method="POST" id="tweet-form">

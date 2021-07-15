@@ -54,7 +54,7 @@ $(document).ready(function() {
       </article>`
 
     return newTweet;
-  }  
+  }
   
   const escape = function (str) {
     let div = document.createElement("div");

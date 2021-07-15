@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  document.getElementById("tweet-error").style.display = "none";
 
   $("#tweet-form").submit(function(event) {
     console.log("I should prevent default")
@@ -6,8 +7,9 @@ $(document).ready(function() {
 
     let formData = $("#tweet-form").serialize();
     
+    const error = handleFormData(formData);
 
-    if (handleFormData(formData)) {
+    if (error  === "allGood") {
       $.ajax({
         url : "/tweets",
         type: "POST",
@@ -21,22 +23,30 @@ $(document).ready(function() {
           console.log("Error", errorThrown);
         }
       });
+    } else {
+      console.log(error)
+      if (error === "err01") {
+        console.log("Im checking for error type");
+        $("#error-text").text( "You haven't tweeted anything my friend, write something!")
+      } else if (error === "err02") {
+        $("#error-text").text( "Your tweet is too long, please use the counter for reference")
+      }
+      
+      $( "#tweet-error" ).slideDown("fast")
     }
   })
 
   const handleFormData = (formData) => {
 
     if (formData.length < 6) {                  //check if input is empty
-      alert("You havent tweeted anything yo");
-      return;     //return error code 
+      return "err01";     //return error code 
     }
 
     if (formData.length > 145) {                //check if input is too long
-      alert("Your tweet is too long, please use the counter for reference");
-      return;   
+      return "err02";   
     }
 
-    return true;   
+    return "allGood";   
   }
 
 });

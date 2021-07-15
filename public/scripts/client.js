@@ -8,25 +8,21 @@ $(document).ready(function() {
   }
 
   loadTweets();
-
-  const renderTweet = () => {
-    // const $tweet = createTweetElement(tweetsArr);
-    // $(".container").append($tweet);
-    console.log("I can do diz");
-    return;
-  }
+  window.loadTweets = loadTweets;
 
   const renderTweets = (tweetsArr) => {
+    $(".tweets").empty();
+
     for (let tweet of tweetsArr) {
       const $tweet = createTweetElement(tweet);
-      $(".container").append($tweet);
+      $(".tweets").prepend($tweet);
     }
     return;
   }
 
   const createTweetElement = (tweetData) => {
     const newTweet = `
-      <article id="tweet-container">
+      <article class="tweet-container">
         <header class="article-header">
           <div class="header-content">
             <div class="img-group">

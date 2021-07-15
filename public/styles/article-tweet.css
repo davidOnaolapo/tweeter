@@ -8,6 +8,14 @@ article {
   flex-direction: column;
 }
 
+article.tweet-container:hover {
+  box-shadow: 5px 5px #B0C4DE;
+}
+
+article.tweet-container i:hover  {
+  color: #ffc40c
+}
+
 article footer {
   flex-grow: 1.4;
   border-style: solid;
@@ -61,7 +69,7 @@ i {
 
 .img-group {
   display: flex;
-  width: 15%;
+  width: 18%;
   height: 100%
 }
 

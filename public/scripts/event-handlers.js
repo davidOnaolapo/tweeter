@@ -22,23 +22,42 @@ $(document).ready(function() {
     event.preventDefault();
 
     let formData = $("#tweet-form").serialize();
+    
 
-    $.ajax({
-      url : "/tweets",
-      type: "POST",
-      data : formData,
-      dataType: "JSON",
-      encode: true,
-      success: function(data, textStatus, jqXHR)
-      {
-          console.log(data);
-      },
-      error: function (jqXHR, textStatus, errorThrown)
-      {
-        console.log("Error", errorThrown);
-      }
-    });
+    if (handleFormData(formData)) {
+      $.ajax({
+        url : "/tweets",
+        type: "POST",
+        data : formData,
+        dataType: "JSON",
+        encode: true,
+        success: function(data, textStatus, jqXHR)
+        {
+            console.log(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown)
+        {
+          console.log("Error", errorThrown);
+        }
+      });
+    }
   })
+
+  const handleFormData = (formData) => {
+    console.log(formData.length)
+
+    if (formData.length < 6) {                  //check if input is empty
+      alert("You havent tweeted anything yo");
+      return;     //return error code 
+    }
+
+    if (formData.length > 145) {                //check if input is too long
+      alert("Your tweet is too long, please use the counter for reference");
+      return;   
+    }
+
+    return true;   
+  }
 });
 
 

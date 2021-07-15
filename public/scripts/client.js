@@ -4,7 +4,6 @@ $(document).ready(function() {
   const loadTweets = () => {
     $.ajax('/tweets', { method: 'GET' })
     .then(function (res) {
-      console.log('Success: ', res);
       renderTweets(res);
     });
   }

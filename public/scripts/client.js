@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  const loadTweets = () => {
+  const loadTweets = () => {            //Gets tweet info from endpoint and renders using renderTweets()
     $.ajax('/tweets', { method: 'GET' })
     .then(function (res) {
       renderTweets(res);
@@ -8,9 +8,9 @@ $(document).ready(function() {
   }
 
   loadTweets();
-  window.loadTweets = loadTweets;
+  window.loadTweets = loadTweets;         //Load tweets made to be global
 
-  const renderTweets = (tweetsArr) => {
+  const renderTweets = (tweetsArr) => {   //Takes an array of objects, creats HTML using createTweettElement() & renders
     $(".tweets").empty();
 
     for (let tweet of tweetsArr) {
@@ -20,7 +20,7 @@ $(document).ready(function() {
     return;
   }
 
-  const createTweetElement = (tweetData) => {
+  const createTweetElement = (tweetData) => {   // Creates an tweet HTML given an obj
     const newTweet = `
       <article class="tweet-container">
         <header class="article-header">
@@ -56,7 +56,7 @@ $(document).ready(function() {
     return newTweet;
   }
   
-  const escape = function (str) {
+  const escape = function (str) {                 // To catch cross-site scripting
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;

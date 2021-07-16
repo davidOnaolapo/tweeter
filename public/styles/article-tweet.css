@@ -58,7 +58,7 @@ article i {
 
 .div-text {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 28px;
   margin: 0px 0px 0px 10px;
 }
 
@@ -69,7 +69,7 @@ article i {
 
 .img-group {
   display: flex;
-  width: 18%;
+  width: 25%;
   height: 100%
 }
 
@@ -84,5 +84,4 @@ article i {
   font-size: 30px;
   color: #c1c1c1;
   font-weight: bold;
-
 }

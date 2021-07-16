@@ -4,11 +4,11 @@ Tweeter is a simple, single-page Twitter clone. You send a tweet and it instantl
 
 ## Final Product
 
-!["Log in to use TinyApp"](https://github.com/davidOnaolapo/tinyapp/blob/master/docs/tinyapp-login.png?raw=true)
+!["Send your tweet, it instantly displays right on the top!"](https://github.com/davidOnaolapo/tweeter/blob/master/docs/tweetBox.jpg?raw=true)
 
-!["The page that displays all your URLs"](https://github.com/davidOnaolapo/tinyapp/blob/master/docs/urls-page.png?raw=true)
+!["I-pad and mobile view!"](https://github.com/davidOnaolapo/tweeter/blob/master/docs/mobileView.jpg?raw=true)
 
-!["Be sure to accept my challenge to a game of rock, paper, scissors, if you would like to own a short URL you did not generate :)"](https://github.com/davidOnaolapo/tinyapp/blob/master/docs/rock-paper-scissors.png?raw=true)
+!["Be sure to keep the tweets under 140 characters ;)"](https://github.com/davidOnaolapo/tweeter/blob/master/docs/error.jpg?raw=true)
 
 
 ## Dependencies
